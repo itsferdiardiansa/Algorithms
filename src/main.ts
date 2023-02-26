@@ -12,4 +12,7 @@
 // import './dynamic-programming/fibonacci'
 
 // RECURSION
-import './recursion'
+// import './recursion'
+
+// BINARY SEARCH
+import './binary-search'

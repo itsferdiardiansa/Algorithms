@@ -40,19 +40,6 @@ function memo(fn: Function): Function {
   }
 }
 
-// function fib(n: number, cached: any = {}): number {
-//   // if (n in cached) return cached[n]
-//   if (n < 2) return 1
-  
-//   // cached[n] = fib((n - 2), cached) + fib((n - 1), cached) 
-  
-//   // console.log(cached)
-//   // return cached[n] 
-//   return countFibonacci(n - 1) + countFibonacci(n - 2) 
-// }
-
-const countFibonacci = memo(fib)
-
 
 // console.log('FIB (1): ', fib(10, {}))
 // console.log('FIB (2): ', countFibonacci(20))
@@ -106,6 +93,26 @@ let data = [1, 2, 3, 10]
 // console.log(1 + 2 + 3 + 4 + 5 + 6)
 // console.log(recursiveRange(10))
 
+/**
+ * How it works: 
+ * 
+ *  fib(5) is equal 8 => [1, 1, 2, 3, 5, 8]
+ * 
+ *                5
+ *              /   \
+ *             4     3
+ *           /   \
+ *         3      2
+ *        /  \   /  \
+ *       2    1 1    1
+ *      / \
+ *     1  1
+ * 
+ * 
+ * @param n 
+ * @param cached 
+ * @returns 
+ */
 function fib(n: number, cached: any = {}){
   // add whatever parameters you deem necessary - good luck!
   if (n in cached) return cached[n]

@@ -3,6 +3,7 @@
 // import './sorting/merge-sort'
 // import './sorting/selection-sort'
 // import './sorting/insertion-sort'
+import './sorting/quick-sort'
 
 // PROBLEM SOLVING PATTERNS
 // import './problem-solving-patterns/frequency-counter'
@@ -21,4 +22,4 @@
 // import './binary-search'
 
 // Binary O Notation
-import './binary-o-notation'
+// import './binary-o-notation'

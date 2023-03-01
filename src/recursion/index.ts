@@ -59,10 +59,10 @@ function memo(fn: Function): Function {
 
 function power(n: number, end: number): number {
   if (end < 1) return 1
-  return power(n, end - 1) + power(n, end - 1)
+  return power(n, end - 1) * n
 }
 
-// console.log(power(2, 4))
+console.log('Output: ', power(3, 4))
 
 function fact(n: number, sum: number = 1): number {
   if (n === 1) return sum
@@ -255,8 +255,8 @@ const obj2 = {
   e: {e: {e: 2}, ee: 'car'}
 };
 
-console.log('Output: ', nestedEvenSum(obj1)) // 6
-console.log('Output: ', nestedEvenSum(obj2)) // 10
+// console.log('Output: ', nestedEvenSum(obj1)) // 6
+// console.log('Output: ', nestedEvenSum(obj2)) // 10
 
 /**
  * Write a recursive function called capitalizeWords. Given an array of words, return a new array containing each word capitalized.
@@ -326,8 +326,8 @@ let obj4 = {
     }
   }
 }
-console.log('Output: ', JSON.stringify(stringifyNumbers(obj3), null, 2))
-console.log('Output: ', JSON.stringify(stringifyNumbers(obj4), null, 2))
+// console.log('Output: ', JSON.stringify(stringifyNumbers(obj3), null, 2))
+// console.log('Output: ', JSON.stringify(stringifyNumbers(obj4), null, 2))
 
 /**
  * Write a function called collectStrings which accepts an object and returns an array of all the values in the object that have a typeof string
@@ -366,4 +366,4 @@ const obj5 = {
   }
 }
 
-console.log('Output: ', collectStrings(obj5))
+// console.log('Output: ', collectStrings(obj5))

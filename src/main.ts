@@ -3,7 +3,7 @@
 // import './sorting/merge-sort'
 // import './sorting/selection-sort'
 // import './sorting/insertion-sort'
-import './sorting/quick-sort'
+// import './sorting/quick-sort'
 
 // PROBLEM SOLVING PATTERNS
 // import './problem-solving-patterns/frequency-counter'
@@ -11,6 +11,7 @@ import './sorting/quick-sort'
 
 // SEARCH STRING
 // import './boyer-more'
+import './knuth-morris-pratt'
 
 // DYNAMIC PROGRAMMING
 // import './dynamic-programming/fibonacci'
